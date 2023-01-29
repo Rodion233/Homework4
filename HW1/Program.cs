@@ -9,8 +9,8 @@ int Prompt(string message)
     int result = Convert.ToInt32(Console.ReadLine());
     return result;
 }
-int num1 = Prompt("Enter number A");
-int num2 = Prompt("Enter number B");
+int numberA = Prompt("Enter number A");
+int numberB = Prompt("Enter number B");
 int Exponation(int num1, int num2)
 {
     int result = 1;
@@ -20,5 +20,5 @@ int Exponation(int num1, int num2)
     }
     return result;
 }
-int exp = Exponation(num1, num2);
-System.Console.WriteLine($"Число {num1} в степени {num2} равно {exp}");
+int exp = Exponation(numberA, numberB);
+System.Console.WriteLine($"Число {numberA} в степени {numberB} равно {exp}");

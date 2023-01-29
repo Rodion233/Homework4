@@ -3,4 +3,11 @@
 82 -> 10
 9012 -> 12
 */
+int Prompt(string message)
+{
+    System.Console.Write($"{message}: ");
+    int result = Convert.ToInt32(Console.ReadLine());
+    return result;
+}
+int number = Prompt("Введите число >");
 
