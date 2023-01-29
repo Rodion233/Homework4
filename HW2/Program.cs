@@ -10,4 +10,17 @@ int Prompt(string message)
     return result;
 }
 int number = Prompt("Введите число >");
-
+int SumNumber(int numberN)
+{
+    int advance = 0;
+    int result = 0;
+    while (numberN > 0)
+    {
+        advance = numberN % 10;
+        result = result + advance;
+        numberN = numberN / 10;
+    }
+    return result;
+}
+int sumnumber = SumNumber(number);
+System.Console.WriteLine($"Сумма цифр числа {number} равна {sumnumber}");
